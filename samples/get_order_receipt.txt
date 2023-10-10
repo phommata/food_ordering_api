@@ -1,0 +1,25 @@
+GET /order/:id
+
+Response
+{
+    "id": "c424989e-6760-45bd-bacd-dad9a4e9efd6",
+    "status": "COMPLETE",
+    "total": 70.94,
+    "items": [
+        {
+            "id": "781d66c4-87aa-469f-88df-1117c77fb576",
+            "price": 14.99,
+            "quantity": 1
+        },
+        {
+            "id": "b9024fb1-c3d9-4c5f-b447-0826e86988b4",
+            "price": 12.99,
+            "quantity": 2
+        },
+        {
+            "id": "f4f81a55-8f3d-4ae1-ae80-c81f51c0c49c",
+            "price": 9.99,
+            "quantity": 3
+        }
+    ]
+}
