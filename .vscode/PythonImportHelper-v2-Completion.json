@@ -1,1 +1,395 @@
+[
+    {
+        "label": "BaseModel",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "BaseModel",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "List",
+        "importPath": "typing",
         "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "List",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "List",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "TestClient",
+        "importPath": "fastapi.testclient",
+        "description": "fastapi.testclient",
+        "isExtraImport": true,
+        "detail": "fastapi.testclient",
+        "documentation": {}
+    },
+    {
+        "label": "TestClient",
+        "importPath": "fastapi.testclient",
+        "description": "fastapi.testclient",
+        "isExtraImport": true,
+        "detail": "fastapi.testclient",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "importPath": "main",
+        "description": "main",
+        "isExtraImport": true,
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "importPath": "main",
+        "description": "main",
+        "isExtraImport": true,
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "FastAPI",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "APIRouter",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "APIRouter",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "Depends",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "HTTPException",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "menu_router",
+        "importPath": "menu",
+        "description": "menu",
+        "isExtraImport": true,
+        "detail": "menu",
+        "documentation": {}
+    },
+    {
+        "label": "MenuService",
+        "importPath": "menu",
+        "description": "menu",
+        "isExtraImport": true,
+        "detail": "menu",
+        "documentation": {}
+    },
+    {
+        "label": "order_router",
+        "importPath": "order",
+        "description": "order",
+        "isExtraImport": true,
+        "detail": "order",
+        "documentation": {}
+    },
+    {
+        "label": "json",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "json",
+        "description": "json",
+        "detail": "json",
+        "documentation": {}
+    },
+    {
+        "label": "Menu",
+        "importPath": "models.menu",
+        "description": "models.menu",
+        "isExtraImport": true,
+        "detail": "models.menu",
+        "documentation": {}
+    },
+    {
+        "label": "OrderReceipt",
+        "importPath": "models.order",
+        "description": "models.order",
+        "isExtraImport": true,
+        "detail": "models.order",
+        "documentation": {}
+    },
+    {
+        "label": "OrderRequest",
+        "importPath": "models.order",
+        "description": "models.order",
+        "isExtraImport": true,
+        "detail": "models.order",
+        "documentation": {}
+    },
+    {
+        "label": "OrderResponse",
+        "importPath": "models.order",
+        "description": "models.order",
+        "isExtraImport": true,
+        "detail": "models.order",
+        "documentation": {}
+    },
+    {
+        "label": "uuid",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "uuid",
+        "description": "uuid",
+        "detail": "uuid",
+        "documentation": {}
+    },
+    {
+        "label": "MenuItem",
+        "kind": 6,
+        "importPath": "models.menu",
+        "description": "models.menu",
+        "peekOfCode": "class MenuItem(BaseModel):\n    id: str\n    name: str\n    genre: str\n    price: float\nclass Menu(BaseModel):\n    items: List[MenuItem]",
+        "detail": "models.menu",
+        "documentation": {}
+    },
+    {
+        "label": "Menu",
+        "kind": 6,
+        "importPath": "models.menu",
+        "description": "models.menu",
+        "peekOfCode": "class Menu(BaseModel):\n    items: List[MenuItem]",
+        "detail": "models.menu",
+        "documentation": {}
+    },
+    {
+        "label": "OrderItemBase",
+        "kind": 6,
+        "importPath": "models.order",
+        "description": "models.order",
+        "peekOfCode": "class OrderItemBase(BaseModel):\n    id: str\n    quantity: int\nclass OrderItem(OrderItemBase):\n    price: float\nclass OrderRequest(BaseModel):\n    items: List[OrderItemBase]\nclass OrderResponse(BaseModel):\n    order_id: str\n    status: str",
+        "detail": "models.order",
+        "documentation": {}
+    },
+    {
+        "label": "OrderItem",
+        "kind": 6,
+        "importPath": "models.order",
+        "description": "models.order",
+        "peekOfCode": "class OrderItem(OrderItemBase):\n    price: float\nclass OrderRequest(BaseModel):\n    items: List[OrderItemBase]\nclass OrderResponse(BaseModel):\n    order_id: str\n    status: str\n    total: float\nclass OrderReceipt(BaseModel):\n    id: str",
+        "detail": "models.order",
+        "documentation": {}
+    },
+    {
+        "label": "OrderRequest",
+        "kind": 6,
+        "importPath": "models.order",
+        "description": "models.order",
+        "peekOfCode": "class OrderRequest(BaseModel):\n    items: List[OrderItemBase]\nclass OrderResponse(BaseModel):\n    order_id: str\n    status: str\n    total: float\nclass OrderReceipt(BaseModel):\n    id: str\n    status: str\n    total: float",
+        "detail": "models.order",
+        "documentation": {}
+    },
+    {
+        "label": "OrderResponse",
+        "kind": 6,
+        "importPath": "models.order",
+        "description": "models.order",
+        "peekOfCode": "class OrderResponse(BaseModel):\n    order_id: str\n    status: str\n    total: float\nclass OrderReceipt(BaseModel):\n    id: str\n    status: str\n    total: float\n    items: List[OrderItem]",
+        "detail": "models.order",
+        "documentation": {}
+    },
+    {
+        "label": "OrderReceipt",
+        "kind": 6,
+        "importPath": "models.order",
+        "description": "models.order",
+        "peekOfCode": "class OrderReceipt(BaseModel):\n    id: str\n    status: str\n    total: float\n    items: List[OrderItem]",
+        "detail": "models.order",
+        "documentation": {}
+    },
+    {
+        "label": "test_get_menu",
+        "kind": 2,
+        "importPath": "tests.test_menu",
+        "description": "tests.test_menu",
+        "peekOfCode": "def test_get_menu():\n    response = client.get(\"/menu\")\n    assert response.status_code == 200\n    menu_items = response.json()\n    assert len(menu_items['items']) == 3 \n    # verify the response\n    assert menu_items == {\n    \"items\": \n    [\n        {",
+        "detail": "tests.test_menu",
+        "documentation": {}
+    },
+    {
+        "label": "client",
+        "kind": 5,
+        "importPath": "tests.test_menu",
+        "description": "tests.test_menu",
+        "peekOfCode": "client = TestClient(app)\ndef test_get_menu():\n    response = client.get(\"/menu\")\n    assert response.status_code == 200\n    menu_items = response.json()\n    assert len(menu_items['items']) == 3 \n    # verify the response\n    assert menu_items == {\n    \"items\": \n    [",
+        "detail": "tests.test_menu",
+        "documentation": {}
+    },
+    {
+        "label": "test_create_order",
+        "kind": 2,
+        "importPath": "tests.test_order",
+        "description": "tests.test_order",
+        "peekOfCode": "def test_create_order():\n    order_data = {\n        \"items\": [\n            {\n                \"id\": \"781d66c4-87aa-469f-88df-1117c77fb576\",\n                \"quantity\": 1\n            },\n            {\n                \"id\": \"b9024fb1-c3d9-4c5f-b447-0826e86988b4\",\n                \"quantity\": 2",
+        "detail": "tests.test_order",
+        "documentation": {}
+    },
+    {
+        "label": "test_get_order_receipt",
+        "kind": 2,
+        "importPath": "tests.test_order",
+        "description": "tests.test_order",
+        "peekOfCode": "def test_get_order_receipt():\n    response_get_receipt = client.get(f\"/order/c424989e-6760-45bd-bacd-dad9a4e9efd6\")\n    assert response_get_receipt.status_code == 200\n    receipt = response_get_receipt.json()\n    # verify the response\n    assert receipt == {\n    \"id\": \"c424989e-6760-45bd-bacd-dad9a4e9efd6\",\n    \"status\": \"COMPLETE\",\n    \"total\": 70.94,\n    \"items\": [",
+        "detail": "tests.test_order",
+        "documentation": {}
+    },
+    {
+        "label": "client",
+        "kind": 5,
+        "importPath": "tests.test_order",
+        "description": "tests.test_order",
+        "peekOfCode": "client = TestClient(app)\ndef test_create_order():\n    order_data = {\n        \"items\": [\n            {\n                \"id\": \"781d66c4-87aa-469f-88df-1117c77fb576\",\n                \"quantity\": 1\n            },\n            {\n                \"id\": \"b9024fb1-c3d9-4c5f-b447-0826e86988b4\",",
+        "detail": "tests.test_order",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "app = FastAPI()\napp.include_router(menu_router, prefix=\"/menu\", tags=[\"menu\"])\napp.include_router(order_router, prefix=\"/order\", tags=[\"order\"])",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "MenuItem",
+        "kind": 6,
+        "importPath": "menu",
+        "description": "menu",
+        "peekOfCode": "class MenuItem:\n    def __init__(self, id, name, genre, price):\n        self.id = id\n        self.name = name\n        self.genre = genre\n        self.price = price\nclass MenuService:\n    _instance = None\n    def __new__(cls):\n        if cls._instance is None:",
+        "detail": "menu",
+        "documentation": {}
+    },
+    {
+        "label": "MenuService",
+        "kind": 6,
+        "importPath": "menu",
+        "description": "menu",
+        "peekOfCode": "class MenuService:\n    _instance = None\n    def __new__(cls):\n        if cls._instance is None:\n            cls._instance = super(MenuService, cls).__new__(cls)\n            cls._instance.init()\n        return cls._instance\n    def init(self):\n        self.menu_items = [\n            MenuItem(\"781d66c4-87aa-469f-88df-1117c77fb576\", \"Brooklyn Spaghetti\", \"ITALIAN\", 14.99),",
+        "detail": "menu",
+        "documentation": {}
+    },
+    {
+        "label": "menu_router",
+        "kind": 5,
+        "importPath": "menu",
+        "description": "menu",
+        "peekOfCode": "menu_router = APIRouter()\nclass MenuItem:\n    def __init__(self, id, name, genre, price):\n        self.id = id\n        self.name = name\n        self.genre = genre\n        self.price = price\nclass MenuService:\n    _instance = None\n    def __new__(cls):",
+        "detail": "menu",
+        "documentation": {}
+    },
+    {
+        "label": "menu_service",
+        "kind": 5,
+        "importPath": "menu",
+        "description": "menu",
+        "peekOfCode": "menu_service = MenuService()\n@menu_router.get(\"/\", response_model=Menu)\nasync def get_menu():\n    menu_items = menu_service.get_menu_items()\n    menu_items_dicts = [menu.__dict__ for menu in menu_items]\n    return {\"items\": menu_items_dicts}",
+        "detail": "menu",
+        "documentation": {}
+    },
+    {
+        "label": "OrderItem",
+        "kind": 6,
+        "importPath": "order",
+        "description": "order",
+        "peekOfCode": "class OrderItem:\n    def __init__(self, id, price, quantity):\n        self.id = id\n        self.price = price\n        self.quantity = quantity\nclass Order:\n    def __init__(self, id, status, total, items):\n        self.id = id\n        self.status = status\n        self.total = total",
+        "detail": "order",
+        "documentation": {}
+    },
+    {
+        "label": "Order",
+        "kind": 6,
+        "importPath": "order",
+        "description": "order",
+        "peekOfCode": "class Order:\n    def __init__(self, id, status, total, items):\n        self.id = id\n        self.status = status\n        self.total = total\n        self.items = [OrderItem(**item_data) for item_data in items]\nclass OrderService:\n    def __init__(self, menu_service: MenuService):\n        self.menu_service = menu_service\n        # Mock data for order",
+        "detail": "order",
+        "documentation": {}
+    },
+    {
+        "label": "OrderService",
+        "kind": 6,
+        "importPath": "order",
+        "description": "order",
+        "peekOfCode": "class OrderService:\n    def __init__(self, menu_service: MenuService):\n        self.menu_service = menu_service\n        # Mock data for order\n        order_data = {\n            \"c424989e-6760-45bd-bacd-dad9a4e9efd6\" : {\n                \"id\": \"c424989e-6760-45bd-bacd-dad9a4e9efd6\",\n                \"status\": \"COMPLETE\",\n                \"total\": 70.94,\n                \"items\": [",
+        "detail": "order",
+        "documentation": {}
+    },
+    {
+        "label": "order_router",
+        "kind": 5,
+        "importPath": "order",
+        "description": "order",
+        "peekOfCode": "order_router = APIRouter()\nclass OrderItem:\n    def __init__(self, id, price, quantity):\n        self.id = id\n        self.price = price\n        self.quantity = quantity\nclass Order:\n    def __init__(self, id, status, total, items):\n        self.id = id\n        self.status = status",
+        "detail": "order",
+        "documentation": {}
+    },
+    {
+        "label": "menu_service",
+        "kind": 5,
+        "importPath": "order",
+        "description": "order",
+        "peekOfCode": "menu_service = MenuService()\norder_service = OrderService(menu_service)\n@order_router.post(\"/\", response_model=OrderResponse)\nasync def create_order(order: OrderRequest, order_service: OrderService = Depends(lambda: order_service)):\n    return order_service.create_order(order)\n@order_router.get(\"/{order_id}\", response_model=OrderReceipt)\nasync def get_order_receipt(order_id: str, order_service: OrderService = Depends(lambda: order_service)):\n    return order_service.get_order_receipt(order_id)",
+        "detail": "order",
+        "documentation": {}
+    },
+    {
+        "label": "order_service",
+        "kind": 5,
+        "importPath": "order",
+        "description": "order",
+        "peekOfCode": "order_service = OrderService(menu_service)\n@order_router.post(\"/\", response_model=OrderResponse)\nasync def create_order(order: OrderRequest, order_service: OrderService = Depends(lambda: order_service)):\n    return order_service.create_order(order)\n@order_router.get(\"/{order_id}\", response_model=OrderReceipt)\nasync def get_order_receipt(order_id: str, order_service: OrderService = Depends(lambda: order_service)):\n    return order_service.get_order_receipt(order_id)",
+        "detail": "order",
+        "documentation": {}
+    }
+]
